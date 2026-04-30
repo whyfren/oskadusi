@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { heroConfig } from "../config";
@@ -15,6 +16,26 @@ export function Hero() {
   const copyrightRef = useRef<HTMLDivElement>(null);
 
   const triggersRef = useRef<ScrollTrigger[]>([]);
+
+  const [bg, setBg] = useState("");
+
+  useEffect(() => {
+    const updateImage = () => {
+      const width = window.innerWidth;
+
+      if (width < 768) {
+        setBg("/OSKADUSI_MOBILE.webp");
+      } else if (width < 1400) {
+        setBg("/OSKADUSI_SQUARE.webp");
+      } else {
+        setBg("/OSKADUSI.webp");
+      }
+    };
+
+    updateImage();
+    window.addEventListener("resize", updateImage);
+    return () => window.removeEventListener("resize", updateImage);
+  }, []);
 
   useEffect(() => {
     // Entry animation on load
@@ -160,7 +181,7 @@ export function Hero() {
         }}
       >
         <img
-          src={heroConfig.backgroundImage}
+          src={bg}
           alt="Hero"
           className="w-full h-full object-cover"
           style={{ filter: "brightness(0.9)" }}
@@ -169,7 +190,7 @@ export function Hero() {
         <div
           className="absolute inset-0 mix-blend-multiply opacity-50"
           style={{
-            backgroundImage: `url(${heroConfig.backgroundImage})`,
+            backgroundImage: `url(${bg||undefined})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             transform: "translateX(-2px)",

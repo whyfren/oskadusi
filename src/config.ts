@@ -52,10 +52,10 @@ export interface HeroConfig {
 }
 
 export const heroConfig: HeroConfig = {
-  title: "/LOGO_OSIS.png",
+  title: "/LOGO_OSIS.webp",
   subtitle: "Inspire. Empower. Transform.",
-  backgroundImage: "/OSKADUSI.png",
-  osisImage: "/hero-osis.jpg",
+  backgroundImage: "/OSKADUSI.webp",
+  osisImage: "/hero-osis.webp",
   copyright: "© 2026 OSKADUSI",
 };
 
@@ -80,11 +80,11 @@ export const aboutConfig: AboutConfig = {
   titleLine1: "Kami berdedikasi untuk menciptakan komunitas sekolah yang dinamis",
   titleLine2: "di mana setiap suara siswa didengar dan dihargai.",
   description: "OSKADUSI berfungsi sebagai jembatan antara siswa dan sekolah, menyelenggarakan acara, mengadvokasi kepentingan mahasiswa, dan menumbuhkan budaya kepemimpinan dan pelayanan. Sejak didirikan, kami telah memulai puluhan program yang sukses dan menjangkau ribuan siswa.",
-  image1: "/about-1.jpg",
+  image1: "/about-1.webp",
   image1Alt: "Rapat Dewan Siswa",
-  image2: "/about-2.jpg",
+  image2: "/about-2.webp",
   image2Alt: "Siswa berkolaborasi",
-  authorImage: "/president.jpg",
+  authorImage: "/president.webp",
   authorName: "Aulia N.",
   authorBio: "Sebagai Ketua OSIS, saya percaya pada kekuatan aksi kolektif. Bersama-sama, kita dapat membangun sekolah di mana setiap siswa berkembang dan berkontribusi pada sesuatu yang lebih besar dari diri mereka sendiri.",
 };
@@ -138,29 +138,29 @@ export const servicesConfig: ServicesConfig = {
   title: "Organization Structure",
   subtitle: "Meet the dedicated teams that make our vision a reality.",
   services: [
-    { 
-      id: "01", 
-      title: "Executive Board", 
-      description: "The President, Vice President, Secretary, and Treasurer oversee all council operations and strategic planning.", 
-      image: "/structure-1.jpg" 
+    {
+      id: "01",
+      title: "Executive Board",
+      description: "The President, Vice President, Secretary, and Treasurer oversee all council operations and strategic planning.",
+      image: "/structure-1.jpg"
     },
-    { 
-      id: "02", 
-      title: "Events Committee", 
-      description: "Plans and executes campus-wide events, from orientation week to graduation celebrations.", 
-      image: "/structure-2.jpg" 
+    {
+      id: "02",
+      title: "Events Committee",
+      description: "Plans and executes campus-wide events, from orientation week to graduation celebrations.",
+      image: "/structure-2.jpg"
     },
-    { 
-      id: "03", 
-      title: "Communications Team", 
-      description: "Manages social media, newsletters, and all internal and external communications.", 
-      image: "/structure-3.jpg" 
+    {
+      id: "03",
+      title: "Communications Team",
+      description: "Manages social media, newsletters, and all internal and external communications.",
+      image: "/structure-3.jpg"
     },
-    { 
-      id: "04", 
-      title: "Student Welfare", 
-      description: "Advocates for student needs and works with administration on policy improvements.", 
-      image: "/structure-4.jpg" 
+    {
+      id: "04",
+      title: "Student Welfare",
+      description: "Advocates for student needs and works with administration on policy improvements.",
+      image: "/structure-4.jpg"
     },
   ],
 };
@@ -185,26 +185,26 @@ export interface TestimonialsConfig {
 export const testimonialsConfig: TestimonialsConfig = {
   title: "Student Voices",
   testimonials: [
-    { 
-      id: 1, 
-      name: "James Chen", 
-      title: "Senior, Computer Science", 
-      quote: "The Student Council transformed my college experience. Through their mentorship program, I found my passion for community leadership.", 
-      image: "/testimonial-1.jpg" 
+    {
+      id: 1,
+      name: "Rizky Pratama",
+      title: "Kelas X RPL",
+      quote: "Awalnya saya nggak pede buat ikut organisasi, tapi di sini saya jadi berani ngomong di depan orang dan ngerasa punya circle yang support banget.",
+      image: "/testimonial-1.jpg"
     },
-    { 
-      id: 2, 
-      name: "Emily Rodriguez", 
-      title: "Junior, Business Administration", 
-      quote: "Being part of the Events Committee taught me invaluable skills in project management and teamwork that I'll carry into my career.", 
-      image: "/testimonial-2.jpg" 
+    {
+      id: 2,
+      name: "Putri",
+      title: "Kelas XI TEI",
+      quote: "Kegiatan event yang diadain bener-bener ngebantu kita belajar kerja tim. Capek sih, tapi puas banget pas acaranya sukses.",
+      image: "/testimonial-2.jpg"
     },
-    { 
-      id: 3, 
-      name: "Michael Park", 
-      title: "Sophomore, Engineering", 
-      quote: "The Innovation Challenge pushed me to think creatively and collaborate with students from different disciplines. It was transformative.", 
-      image: "/testimonial-3.jpg" 
+    {
+      id: 3,
+      name: "Shandika",
+      title: "Kelas XI TSM",
+      quote: "Saya dapet banyak pengalaman baru, dari yang awalnya cuma ikut-ikutan jadi malah keterusan aktif. Seru sih, banyak kenalan juga.",
+      image: "/testimonial-3.jpg"
     },
   ],
 };
@@ -234,46 +234,46 @@ export const pricingConfig: PricingConfig = {
   subtitle: "Join us at these exciting upcoming activities and make the most of your campus experience.",
   ctaButtonText: "Register Now",
   plans: [
-  { 
-    id: 1, 
-    name: "Classmeet Competition", 
-    price: 5, 
-    unit: "per class", 
-    featured: true, 
-    features: [
-      "Lomba Kompetitif antar kelas",
-      "Lomba e-sport",
-      "Lomba olahraga",
-      "Hadiah untuk juara"
-    ] 
-  },
-  { 
-    id: 2, 
-    name: "Pentas Seni (PENSI)", 
-    price: 10, 
-    unit: "ticket", 
-    featured: false, 
-    features: [
-      "Penampilan band & dance",
-      "Bazar makanan",
-      "Guest star lokal",
-      "Support karya siswa"
-    ] 
-  },
-  { 
-    id: 4, 
-    name: "MPLS 2027", 
-    price: 0, 
-    unit: "mandatory", 
-    featured: false, 
-    features: [
-      "Pengenalan lingkungan sekolah",
-      "Games & ice breaking",
-      "Materi dari OSIS",
-      "Tur fasilitas sekolah"
-    ] 
-  }
-],
+    {
+      id: 1,
+      name: "Classmeet Competition",
+      price: 5,
+      unit: "per class",
+      featured: true,
+      features: [
+        "Lomba Kompetitif antar kelas",
+        "Lomba e-sport",
+        "Lomba olahraga",
+        "Hadiah untuk juara"
+      ]
+    },
+    {
+      id: 2,
+      name: "Pentas Seni (PENSI)",
+      price: 10,
+      unit: "ticket",
+      featured: false,
+      features: [
+        "Penampilan band & dance",
+        "Bazar makanan",
+        "Guest star lokal",
+        "Support karya siswa"
+      ]
+    },
+    {
+      id: 4,
+      name: "MPLS 2027",
+      price: 0,
+      unit: "mandatory",
+      featured: false,
+      features: [
+        "Pengenalan lingkungan sekolah",
+        "Games & ice breaking",
+        "Materi dari OSIS",
+        "Tur fasilitas sekolah"
+      ]
+    }
+  ],
 };
 
 // ============================================================================
@@ -293,17 +293,17 @@ export interface FAQConfig {
 export const faqConfig: FAQConfig = {
   title: "Frequently Asked Questions",
   faqs: [
-    { 
-      question: "Gimana cara bergabung dengan OSKADUSI?", 
-      answer: "Kami mengadakan pemilihan di setiap awal tahun ajaran baru. jika kamu kelas 10, kamu bisa mendaftar untuk menjadi anggota OSKADUSI dengan mengisi formulir online yang akan diumumkan melalui media sosial kami. Proses seleksi melibatkan wawancara dan penilaian minat serta komitmen terhadap kegiatan OSKADUSI." 
+    {
+      question: "Gimana cara bergabung dengan OSKADUSI?",
+      answer: "Kami mengadakan pemilihan di setiap awal tahun ajaran baru. jika kamu kelas 10, kamu bisa mendaftar untuk menjadi anggota OSKADUSI dengan mengisi formulir online yang akan diumumkan melalui media sosial kami. Proses seleksi melibatkan wawancara dan penilaian minat serta komitmen terhadap kegiatan OSKADUSI."
     },
-    { 
-      question: "Bagaimana cara saya mengusulkan acara atau inisiatif?", 
-      answer: "Kami menyambut semua ide! Anda dapat mengajukan proposal atau ide melalui formulir online kami, berbicara dengan anggota dewan mana pun, atau menghadiri pertemuan umum untuk menyampaikan ide Anda secara langsung." 
+    {
+      question: "Bagaimana cara saya mengusulkan acara atau inisiatif?",
+      answer: "Kami menyambut semua ide! Anda dapat mengajukan proposal atau ide melalui formulir online kami, berbicara dengan anggota dewan mana pun, atau menghadiri pertemuan umum untuk menyampaikan ide Anda secara langsung."
     },
-    { 
-      question: "Sumber daya apa yang disediakan oleh OSKADUSI?", 
-      answer: "Kami menawarkan pelatihan kepemimpinan, peluang pendanaan acara, pengembangan soft skills, ruang belajar, dan dukungan advokasi untuk masalah mahasiswa." 
+    {
+      question: "Sumber daya apa yang disediakan oleh OSKADUSI?",
+      answer: "Kami menawarkan pelatihan kepemimpinan, peluang pendanaan acara, pengembangan soft skills, ruang belajar, dan dukungan advokasi untuk masalah mahasiswa."
     },
   ],
 };
@@ -338,23 +338,23 @@ export const blogConfig: BlogConfig = {
   readMoreLabel: "Read More",
   readTimePrefix: "Read ",
   posts: [
-    { 
-      id: 1, 
-      title: "Annual Leadership Summit Announced", 
-      excerpt: "Join us for our flagship event featuring industry leaders, workshops, and networking opportunities designed to develop the next generation of leaders.", 
-      readTime: "3 min", 
-      date: "Mar 15, 2024", 
-      image: "/blog-1.jpg", 
-      category: "Events" 
+    {
+      id: 1,
+      title: "Annual Leadership Summit Announced",
+      excerpt: "Join us for our flagship event featuring industry leaders, workshops, and networking opportunities designed to develop the next generation of leaders.",
+      readTime: "3 min",
+      date: "Mar 15, 2024",
+      image: "/blog-1.jpg",
+      category: "Events"
     },
-    { 
-      id: 2, 
-      title: "New Mentorship Program Launch", 
-      excerpt: "We're excited to announce our expanded mentorship program connecting upperclassmen with first-year students for academic and personal growth.", 
-      readTime: "4 min", 
-      date: "Mar 10, 2024", 
-      image: "/blog-2.jpg", 
-      category: "Programs" 
+    {
+      id: 2,
+      title: "New Mentorship Program Launch",
+      excerpt: "We're excited to announce our expanded mentorship program connecting upperclassmen with first-year students for academic and personal growth.",
+      readTime: "4 min",
+      date: "Mar 10, 2024",
+      image: "/blog-2.jpg",
+      category: "Programs"
     },
   ],
 };
